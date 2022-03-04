@@ -1,0 +1,36 @@
+About project file:
+
+THis is a JAVAFX project it require JAVAFX framework;
+javafx is preinstalled in Intellij IDE's with scene editors too.
+just open project in ANY IDE's(or Intellij)with JAVAFX framework and run.
+
+
+Server folder:
+
+This also include a server folder  which contain server.java file which can be compiles and run in console.
+The IP of machine running the server file will act as server for all clients ;
+
+
+
+
+
+Running the program:
+
+open program and run.should type the address of server in config page.
+
+After config page enter address of user u want to connect @(ip of user to chat)@
+The user also should be connected to the server
+
+
+key words:
+
+@close@:to close connectioj with one user
+
+
+
+
+
+
+
+ 
+
