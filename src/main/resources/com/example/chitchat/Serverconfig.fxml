@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chitchat.ServerCon">
+   <children>
+      <TextField fx:id="iptext" layoutX="203.0" layoutY="200.0" />
+      <Button layoutX="312.0" layoutY="226.0" mnemonicParsing="false" onAction="#OnButtonPressed" text="CONNECT SERVER" />
+   </children>
+</AnchorPane>

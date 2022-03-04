@@ -1,0 +1,43 @@
+ ClientController clint= new ClientController();
+        while(true){
+            switch (clint.checked){
+                case 0:
+                    loadsc1( stage);
+                case 1:
+                    loadsc2(stage);
+
+
+
+            }
+        }
+      public void loadsc1(Stage stage) throws IOException {
+         FXMLLoader fxmlLoader = new FXMLLoader(Client.class.getResource("hello-view.fxml"));
+         Scene scene =new Scene(fxmlLoader.load());
+          stage.setTitle("Client");
+          stage.setScene(scene);
+          stage.show();
+      }
+
+      public  void loadsc2(Stage stage) throws IOException {
+          FXMLLoader fxmlLoader = new FXMLLoader(Client.class.getResource("ipcon.fxml"));
+          Scene scene =new Scene(fxmlLoader.load());
+          stage.setTitle("Client");
+          stage.setScene(scene);
+          stage.show();
+
+      }
+
+      public class Clientmodule {
+
+          public DataOutputStream Clientmodule1() throws IOException {
+              Socket clientsocket = new Socket("192.168.0.104",50002);
+              System.out.print("in client module\n");
+              new Subclient(clientsocket).start();
+              System.out.print("subclient started\n");
+              //DataInputStream din=new DataInputStream(clientsocket.getInputStream());
+              DataOutputStream dout=new DataOutputStream(clientsocket.getOutputStream());
+              System.out.print("outstream created\n");
+              return ;
+          }
+
+      }
